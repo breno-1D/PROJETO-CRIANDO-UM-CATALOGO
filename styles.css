@@ -1,60 +1,79 @@
 body {
-    color: pink;
-    background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
+    background-color: #2e7d32;
+    color: white;
     padding: 20px;
-    font-size: 32px;
-    color: rgb(42, 122, 228);
+    text-align: center;
+    font-size: 2em;
 }
 
 .chamada {
-    background: rgb(184, 156, 213);
-    padding-bottom: 80px;
-    padding-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e8f5e9;
 }
 
 .chamada-texto {
-    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-h1 {
-    font-size: 40px;
+.chamada h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 20px;
+.chamada p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-.categoria-videos {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
+.chamada iframe {
+    margin: 15px;
+    max-width: 90%;
+    width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
-}
-
-.categoria-videos img {
-    opacity: 0.5;
-    height: 200px;
-}
-
-.categoria-videos img:hover {
-    opacity: 1.0;
-    border: 3px solid green;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
 }
 
 .categoria h2 {
-    color: rgb(42, 122, 228);
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.categoria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria-imagens img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-imagens img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
